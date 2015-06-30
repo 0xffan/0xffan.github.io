@@ -8,7 +8,37 @@ dl, dd, ol, ul, figure {
     padding: 0;
 }
 
+/**
+ * Full screen background
+ */
+.full-screen-bg {
+  background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), 
+            url(/assets/images/site_background.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 
+.page-header-mid {
+    font-weight: 900;
+    color: white;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 2rem;
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.page-header-mid p {
+    margin: 0;
+    padding: 0;
+    font-size: $base-font-size * 2;
+    font-weight: 300;
+}
 
 /**
  * Basic styling
