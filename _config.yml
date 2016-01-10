@@ -2,9 +2,7 @@
 title: X.F.
 email: your-email@domain.com
 description: > # this means to ignore newlines until "logo:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Personal site of Warran Fan. It's about programing and life.
 logo: site_logo.png
 # Assign a default image for your site's header and footer
 default_bg:       default_site_bg.jpg
@@ -29,7 +27,7 @@ url: "http://localhost:4000"
 # Owner/author information
 owner:
   name:           Warren Fan
-  avatar:         site_logo.png
+  avatar:         avatar.jpg
   email:          fweiwei.026@gmail.com
   # Use the coder's toolbox at http://coderstoolbox.net/string/#!encoding=xml&action=encode&charset=us_ascii to encode your description into XML string
   description:    Personal description.
@@ -54,12 +52,9 @@ bing_verify:
 # Links to include in footer navigation
 # For external links add external: true
 links:
-  - title: Home
+  - title: <i class="icon-home"></i> Home
     url: /
     external: false
-    icon: home
-  - title: <i class="icon-book"></i> Documentation
-    url: /documentation
   - title: Categories
     url: /categories
   - title: Tags
