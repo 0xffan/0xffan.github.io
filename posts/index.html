@@ -1,0 +1,39 @@
+---
+layout: minimal
+title: "All Posts - X.F."
+description: "Take a look at my awesome posts."
+---
+
+<h2>All Posts</h2>
+{% if site.paginate %}
+    <ul class="post-list">
+    {% for post in paginator.posts %}
+        <li>
+            <a href="{{ site.url }}{{ post.url }}">{{ post.title }}<span class="entry-date"><time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%B %d, %Y" }}</time></a>
+        </li>
+    {% endfor %}
+    </ul>
+    {% if paginator.total_pages > 1 %}
+    <div class="pagination">
+        {% if paginator.previous_page %}
+            <a href="{{ paginator.previous_page_path }}" class="previous">&nbsp;«&nbsp;</a>
+        {% else %}
+            <span class="previous disabled">&nbsp;«&nbsp;</span>
+        {% endif %}
+        <span class="page_number"> {{ paginator.page }} / {{ paginator.total_pages }}</span>
+        {% if paginator.next_page %}
+            <a href="{{ paginator.next_page_path }}" class="next">&nbsp;»&nbsp;</a>
+        {% else %}
+            <span class="next disabled">&nbsp;»&nbsp;</span>
+        {% endif %}
+    </div>
+    {% endif %}
+{% else %}
+    <ul class="post-list">
+    {% for post in site.posts %}
+        <li>
+            <a href="{{ site.url }}{{ post.url }}">{{ post.title }}<span class="entry-date"><time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%B %d, %Y" }}</time></a>
+        </li>
+    {% endfor %}
+    </ul>
+{% endif %}

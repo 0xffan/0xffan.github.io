@@ -1,39 +1,52 @@
 # Site settings
-title: X.F.
-email: your-email@domain.com
-description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" 
-url: "http://localhost:4000" 
-twitter_username: 
-github_username:  
+title: 大小棥
+description: "A blog about programing and life."
+baseurl: "" # the subpath of your site, '' for test
+url: "https://ixfan.github.io" # '' for test, in production: 'https:yourusername.github.io'
+
+# User settings
+username: 大小棥
+user_title: Programer
+email: 
+twitter_username: 0xfann
+github_username: ixfan
+instagram_username: 0xfan
+gplus_username:  
+disqus_username: 
+
+timezone: Asia/Chongqing
 
 # Build settings
-timezone: America/New_York
-future: true
-highlighter: pygments
 markdown: kramdown
-sass:
-  sass_dir: _sass
-  style: compressed
-excerpt_separator: <!--more-->
-permalink: /:categories/:year/:month/:day/:title/
-paginate: 5
-kramdown:
-  auto_ids: true
-  footnote_nr: 1
-  entity_output: as_char
-  toc_levels: 1..6
-  use_coderay: true
+highlighter: rouge
+permalink: /post/:title/
+paginate: 7
+paginate_path: "posts/page:num"
 
-  coderay:
-    coderay_line_numbers: nil
-    coderay_line_numbers_start: 1
-    coderay_tab_width: 4
-    coderay_bold_every: 10
-    coderay_css: class
+# html minify
+compress_html:
+  clippings: all
+  comments: all
+  endings: []
+  profile: false
 
-include: [".htaccess"]
-exclude: ["lib", "config.rb", "Capfile", "config", "Gemfile", "Gemfile.lock", "README.md", "LICENSE", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules"]
+# Links to include in menu navigation
+links:
+  - title: home
+    url: /
+  - title: all posts
+    url: /posts
+  - title: series
+    url: /series
+  - title: tags
+    url: /tags
+  - title: about me
+    url: /about
+# projects in header index
+projects:
+  - name: WeChat Kit
+    url: https://github.com/ixfan/wechat-kit
+  - name: Space Jekyll in Arsenic style
+    url: https://github.com/ixfan/space-jekyll-template
+gems: [jekyll-paginate]
+exclude: ["src", "lib", "config.rb", "Capfile", "config", "Gemfile", "Gemfile.lock", "README.md", "LICENSE", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules"]
