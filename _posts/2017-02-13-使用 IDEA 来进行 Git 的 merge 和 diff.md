@@ -8,12 +8,6 @@ categories: ["Tools"]
 comments: true
 ---
 
-
-
-# 使用 IDEA 来进行 Git 的 merge 和 diff
-
-
-
 首先，把 IDEA 加入到你的环境变量 `PATH` 下，使之可以从命令行调用。
 
 以 OS X 为例（UNIX 类似）：
@@ -28,7 +22,7 @@ source ~/.bashrc
 source ~/.zshrc
 ```
 
-或者打开 IDEA，从菜单 Tools | Create Command-line Launcher 为 IDEA 创建启动脚本，同样要确保创建的脚本在你的环境变量 `PATH` 下。
+或者打开 IDEA，从菜单 Tools \| Create Command-line Launcher 为 IDEA 创建启动脚本，同样要确保创建的脚本在你的环境变量 `PATH` 下。
 
 
 
