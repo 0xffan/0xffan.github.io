@@ -2,7 +2,7 @@
 title: 大小棥
 description: "A blog about programing and life."
 baseurl: "" # the subpath of your site, '' for test
-url: "https://ixfan.github.io" # '' for test, in production: 'https:yourusername.github.io'
+url: "https://itworks.run" # '' for test, in production: 'https:yourusername.github.io'
 
 # User settings
 username: 大小棥
@@ -47,6 +47,6 @@ projects:
   - name: WeChat Kit
     url: https://github.com/ixfan/wechat-kit
   - name: Space Jekyll in Arsenic style
-    url: https://github.com/ixfan/space-jekyll-template
+    url: https://github.com/0xffan/space-jekyll-template
 gems: [jekyll-paginate]
 exclude: ["src", "lib", "config.rb", "Capfile", "config", "Gemfile", "Gemfile.lock", "README.md", "LICENSE", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules"]
